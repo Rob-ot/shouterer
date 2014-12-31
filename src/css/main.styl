@@ -1,0 +1,147 @@
+
+@import 'nib'
+
+global-reset()
+
+.vertical-expand {
+  display: inline-block
+  height: 100%
+  vertical-align: middle
+  width: 0
+}
+
+@font-face {
+    font-family: 'timeline'
+    src: url('../fonts/Timeline.ttf')
+    font-weight: normal
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'talldarkhandsome'
+    src: url('../fonts/talldark.ttf')
+    font-weight: normal
+    font-style: normal
+
+}
+
+html, input {
+  text-transform: uppercase
+}
+
+html {
+  min-height: 100%
+}
+body {
+  background: linear-gradient(top, rgb(19, 11, 53), rgb(19, 11, 53))
+  background-repeat: no-repeat
+  color: white
+  font-family: 'talldarkhandsome'
+  font-size: 20px
+  min-height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'timeline'
+}
+h1 {
+  font-size: 40px
+}
+
+.main {
+  margin: 0 auto
+  padding: 20px
+  width: 800px
+}
+
+
+.logo {
+  display: inline
+}
+
+
+.auth {
+  float: right
+
+  .login-button {
+    border: 0
+    background: 0
+    color: white
+    font-size: 40px
+  }
+
+  .auth-user-image {
+    border-radius: 6px
+    display: inline-block
+    vertical-align: middle
+  }
+
+  .auth-user-name {
+    display: inline-block
+    margin-right: 10px
+    vertical-align: middle
+  }
+
+  .auth-box.in {
+    display: none
+    vertical-align: middle
+  }
+  &.logged-in {
+    .auth-box.in {
+      display: block
+    }
+    .auth-box.out {
+      display: none
+    }
+  }
+}
+
+
+
+.shoutbox {
+  background: #111111
+  border: 0
+  color: white
+  display: none
+  font-size: 28px
+  height: 60px
+  width: 100%
+
+  .logged-in & {
+    display: block
+  }
+
+  &::-webkit-input-placeholder {
+    color: white
+  }
+  &:-moz-placeholder {
+    color: white
+  }
+  &::-moz-placeholder {
+    color: white
+  }
+  &:-ms-input-placeholder {
+    color: white
+  }
+}
+
+
+
+.shout {
+  min-height: 80px
+  padding: 4px
+  padding-left: 88px
+  position: relative
+  margin: 10px 0
+
+  .user-image {
+    absolute: top 4px left 4px
+    border-radius: 6px
+    max-height: 80px
+    max-width: 80px
+  }
+
+  .user-name {
+    padding-top: 8px
+  }
+}

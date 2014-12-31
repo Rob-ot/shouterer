@@ -1,0 +1,18 @@
+extends layout.jade
+
+block content
+  .main
+    header
+      h1.logo Shouterer
+      .auth
+        .auth-box.out
+          button.login-button Login
+        .auth-box.in
+          .vertical-expand
+          .auth-user-name.logout-button
+          img.auth-user-image.logout-button()
+
+
+    input.shoutbox(placeholder="What do you want????")
+
+    section.shout-container
