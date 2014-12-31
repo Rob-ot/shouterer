@@ -1,0 +1,28 @@
+{
+  "name": "Shouterer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Rob-ot/shouterer.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Rob-ot/shouterer/issues"
+  },
+  "homepage": "https://github.com/Rob-ot/shouterer",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "jade": "^1.8.2",
+    "metalsmith": "^1.0.1",
+    "metalsmith-jade": "0.0.3",
+    "metalsmith-static": "0.0.5",
+    "metalsmith-stylus": "^0.2.1",
+    "nib": "^1.0.4"
+  }
+}
